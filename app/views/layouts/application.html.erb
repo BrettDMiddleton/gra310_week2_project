@@ -1,6 +1,10 @@
+<!-- !DOCTYPE html tells the web browser what version of HTML the page is written in -->
 <!DOCTYPE html>
+<!-- This is the html tag that the entire file is wrapped in after the !Doctype declaration to tell the browser this is an .html document -->
 <html>
+<!-- This is the head container, the head is where all meta information, imported scripts/stylesheets and the title of the site live -->
   <head>
+    <!-- This is the title of the site as seen in search engines, bookmarked in favorites and in the tab at the top of the browser -->
     <title>Gra310Week2Project</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -8,8 +12,9 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
+<!-- The body tag contains all of what the user will see; text, hyperlinks, images, videos, tables, lists, canvas, header/footer, etc. -->
   <body>
     <%= yield %>
   </body>
 </html>
+
